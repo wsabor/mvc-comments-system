@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= post.title %>
+    </title>
+</head>
+
+<body>
+    <h1>
+        <%= post.title %>
+    </h1>
+    <p>
+        <%= post.content %>
+    </p>
+    <hr>
+    <h2>Comentários</h2>
+    <% if (post.Comments.length> 0) { %>
+        <ul>
+            <% post.Comments.forEach(comment=> { %>
+                <li>
+                    <%= comment.content %>
+                </li>
+                <% }); %>
+        </ul>
+        <% } else { %>
+            <p>Nenhum comentário ainda.</p>
+            <% } %>
+
+                <h3>Adicionar Comentário</h3>
+                <form action="/post/<%= post.id %>/comment" method="POST">
+                    <label for="content">Comentário:</label>
+                    <textarea id="content" name="content" required></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <a href="/">Voltar</a>
+</body>
+
+</html>
