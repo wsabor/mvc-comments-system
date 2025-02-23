@@ -87,8 +87,8 @@ CREATE TABLE IF NOT EXISTS comments (
 
 ```env
 DB_NAME=mvc_comments
-DB_USER=sa
-DB_PASS=desenvolvimento
+DB_USER=seuUsuario
+DB_PASS=suaSenha
 DB_HOST=localhost
 DB_DIALECT=mysql
 ```
