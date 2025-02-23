@@ -109,12 +109,12 @@ node app.js
 
 ## 🔥 Recursos Implementados
 
-✅ Criar postagens com título e conteúdo
-✅ Listar postagens
-✅ Visualizar postagens individuais
-✅ Adicionar comentários em postagens
-✅ Estruturação no padrão MVC
-✅ Uso de Sequelize para interação com MySQL
+✅ Criar postagens com título e conteúdo<br>
+✅ Listar postagens<br>
+✅ Visualizar postagens individuais<br>
+✅ Adicionar comentários em postagens<br>
+✅ Estruturação no padrão MVC<br>
+✅ Uso de Sequelize para interação com MySQL<br>
 
 ## 📜 Licença
 
